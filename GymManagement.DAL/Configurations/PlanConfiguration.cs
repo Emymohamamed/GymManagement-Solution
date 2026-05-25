@@ -13,7 +13,7 @@ namespace GymManagement.Configrations
                    .HasMaxLength(50);
 
             builder.Property(p => p.Description)
-                   
+                   .HasColumnType(typeName: "varchar")
                    .HasMaxLength(200);
             builder.Property(p => p.Price)
                     .HasPrecision(precision: 10, 2);

@@ -1,9 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37203.1 d17.14
+VisualStudioVersion = 17.14.37203.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement", "GymManagement\GymManagement.csproj", "{6CA47394-0650-434C-94E5-14135777EFBD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.PL", "GymManagement\GymManagement.PL.csproj", "{6CA47394-0650-434C-94E5-14135777EFBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.DAL", "GymManagement.DAL\GymManagement.DAL.csproj", "{AF2ED3B3-7F42-4CB3-9715-8175592551AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.BLL", "GymManagement.BLL\GymManagement.BLL.csproj", "{27030CEF-F187-4E09-AC62-47EEF47F33DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +24,14 @@ Global
 		{6CA47394-0650-434C-94E5-14135777EFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CA47394-0650-434C-94E5-14135777EFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CA47394-0650-434C-94E5-14135777EFBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF2ED3B3-7F42-4CB3-9715-8175592551AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF2ED3B3-7F42-4CB3-9715-8175592551AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF2ED3B3-7F42-4CB3-9715-8175592551AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF2ED3B3-7F42-4CB3-9715-8175592551AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27030CEF-F187-4E09-AC62-47EEF47F33DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27030CEF-F187-4E09-AC62-47EEF47F33DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27030CEF-F187-4E09-AC62-47EEF47F33DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27030CEF-F187-4E09-AC62-47EEF47F33DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

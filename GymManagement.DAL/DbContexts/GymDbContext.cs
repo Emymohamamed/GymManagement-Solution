@@ -5,15 +5,24 @@ namespace GymManagement.DbContexts
 {
     public class GymDbContext : DbContext
     {
+       public GymDbContext(DbContextOptions <GymDbContext> options) : base(options)
+        {
+        }
+
+        protected GymDbContext()
+        {
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
         }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(connectionString: "Server =.;Database=GymManagement;Trusted_Connection=True;TrustServerCertificate=True");
-}       public DbSet<Plan> Plans { get; set; }
+//protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+      //  {
+      
+//}
+public DbSet<Plan> Plans { get; set; }
     }
 
 }
